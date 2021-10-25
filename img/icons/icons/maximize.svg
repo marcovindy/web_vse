@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 72 72" style="enable-background:new 0 0 72 72;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;}
+</style>
+<title>videocam</title>
+<polyline class="st0" points="72,0 72,72 0,72 "/>
+<g>
+	<path d="M47,11L47,11c0,1.1,0.9,2,2,2h7.2L41.8,27.4c-0.8,0.8-0.8,2,0,2.8l0,0c0.8,0.8,2,0.8,2.8,0L59,15.8V23c0,1.1,0.9,2,2,2h0
+		c1.1,0,2-0.9,2-2V11c0-1.1-0.9-2-2-2H49C47.9,9,47,9.9,47,11z"/>
+	<path d="M27.4,41.8L13,56.2V49c0-1.1-0.9-2-2-2h0c-1.1,0-2,0.9-2,2v12c0,1.1,0.9,2,2,2h12c1.1,0,2-0.9,2-2v0c0-1.1-0.9-2-2-2h-7.2
+		l14.4-14.4c0.8-0.8,0.8-2,0-2.8l0,0C29.4,41,28.2,41,27.4,41.8z"/>
+</g>
+</svg>
