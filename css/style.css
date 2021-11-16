@@ -9,11 +9,14 @@
 html, body {
   min-height: 100%;
   font-family: "Muli", sans-serif;
+  overflow-x: hidden;
+  background: #0a0a0a;
+  color: #fff;
 }
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
-  color: #111111;
+  color: #fff;
   font-weight: 400;
   font-family: "Oswald", sans-serif;
 }
@@ -252,12 +255,101 @@ span, a {
 
 .landing-page .overlay {
   position: absolute;
-  opacity: 0.15;
+  opacity: 0.25;
   background: #111;
   top: 0;
   left: 0;
   height: 100vh;
   width: 100vw;
+}
+
+/* ======================== */
+/* ===== Choseus Section ===== */
+/* ======================== */
+.choseus-section {
+  padding: 4rem 0;
+}
+
+.choseus-section .container .row .section-title {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.choseus-section .container .row .section-title span {
+  color: #f36100;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  font-family: "Muli", sans-serif;
+}
+
+.choseus-section .container .row .section-title h2 {
+  line-height: 38.4px;
+  font-size: 32px;
+  font-weight: 600;
+  margin-top: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.choseus-section .container .row .item {
+  text-align: center;
+  font-family: "Muli", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 0.6rem;
+}
+
+.choseus-section .container .row .item span {
+  margin: auto;
+  height: 90px;
+  width: 90px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: inline-block;
+  color: #f36100;
+  line-height: 90px;
+  text-align: center;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.choseus-section .container .row .item span img {
+  color: #fff;
+  width: 60px;
+  height: 60px;
+}
+
+.choseus-section .container .row .item p {
+  font-family: "Muli", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #a9a9a9;
+}
+
+.choseus-section .container .row .item h4 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+  line-height: 26.4px;
+  margin-bottom: 1.2rem;
+  margin-top: 1.5rem;
 }
 
 @media (max-width: 960px) {
