@@ -1,0 +1,23 @@
+@media print {
+  .hide-print, .primary-btn {
+    display: none !important;
+  }
+  * {
+    color: #0a0a0a !important;
+  }
+  .scroll-up {
+    display: none;
+  }
+  .choose-me-section {
+    height: 100vh;
+  }
+  img {
+    page-break-before: auto !important;
+    /* 'always,' 'avoid,' 'left,' 'inherit,' or 'right' */
+    page-break-after: auto !important;
+    /* 'always,' 'avoid,' 'left,' 'inherit,' or 'right' */
+    page-break-inside: avoid !important;
+    /* or 'auto' */
+  }
+}
+/*# sourceMappingURL=print.css.map */

@@ -6,8 +6,9 @@
     <meta name="description" content="Rezbar">
     <meta name="keywords" content="Rezbar, woodcurving, woodstatutes, wood, drevo, sochy, dekorace, motorovapila, motorovka">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rezbář - Marek Vaníček</title>
-    <link rel="icon" href="img/chainsaw.png" type="image/x-icon">
+    <meta name="author" content="Marek Vaníček">
+    <title>Řezbář Marek Vaníček</title>
+    <link rel="icon" href="img/favicon/favicon.ico" type="image/x-icon">
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Muli:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
@@ -16,6 +17,7 @@
     <!-- Css Styles -->
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="css/header.css" type="text/css">
+    <link rel="stylesheet" media="print" href="css/print.css" type="text/css">
 </head>
 
 <body>
@@ -24,26 +26,28 @@
     <header>
         <div id="toggleMenu">
             <div class="container">
-                <input type="checkbox" />
-                <span></span>
-                <span></span>
-                <span></span>
+                <div class="burger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
                 <div class="row">
-                    <div class="col-3">
+                    <div class="col-3 col-md-4 col-sm-6 logo-column">
                         <div class="logo">
                             <a href="index.html">
-                                <img width="200px" src="img/logo.png" alt="logo">
+                                <img width="200" src="img/logo.png" alt="logo">
                             </a>
                         </div>
                     </div>
-                    <div class="col-9">
-                        <nav class="nav-menu">
+                    
+                    <div class="col-9 col-md-8 col-sm-12">
+                        <nav class="nav-menu hide">
                             <ul>
                                 <li class="active"><a href="index.html">Domů</a></li>
-                                <li><a href="#">O mně</a></li>
-                                <li><a href="#">Galerie</a></li>                           
-                                <li><a href="#">Produkty</a></li>
-                                <li><a href="#">Kontakt</a></li>
+                                <li><a href="about_me.html">O mně</a></li>
+                                <li><a href="gallery.html">Galerie</a></li>                           
+                                <li><a href="products.html">Produkty</a></li>
+                                <li><a href="contact.html">Kontakt</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -61,9 +65,9 @@
                 <div class="row">
                     <div class="col-6 col-md-12">
                         <div class="hi-text">
-                            <span>Řezbářsví</span>
+                            <span>Řezbář</span>
                             <h1>Vše <strong>jde</strong> vyřezat</h1>
-                            <a href="#" class="primary-btn">Get info</a>
+                            <a href="#choose-me" class="primary-btn">Zjistit více</a>
                         </div>
                     </div>
                 </div>
@@ -75,12 +79,12 @@
 
     <!-- Landing Page End -->
 
-    <!-- ChoseUs Section Begin -->
-    <section class="choseus-section">
+    <!-- choose-me Section Begin -->
+    <section class="choose-me-section">
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <div class="section-title">
+                    <div class="align-center section-title">
                         <span>Co si lze objednat?</span>
                         <h2>Kvalitní výrobky na prvním místě</h2>
                     </div>
@@ -89,30 +93,206 @@
             <div class="row">
                 <div class="col-4 col-md-6 col-sm-12">
                     <div class="item">
-                        <span><img src="img/icons/icons/eco.svg" alt="web"></span>
-                        <h4>Sochy</h4>
+                        <span class="m-auto hide-print"><img width="1" class="m-auto" src="img/icons/icons/eco.svg" alt="ikona_listu"></span>
+                        <h3>Sochy</h3>
                         <p>Dřevěné sochy všerůzných tvarů a fantazie, sochy jsou vyřezávané pomocí motorové pily.</p>
+                        
                     </div>
                 </div>
                 <div class="col-4 col-md-6 col-sm-12">
                     <div class="item">
-                        <span><img src="img/icons/icons/furniture.svg" alt="web"></span>
-                        <h4>Nábytek</h4>
+                        <span class="m-auto hide-print"><img width="1" class="m-auto" src="img/icons/icons/furniture.svg" alt="ikona_nábytku"></span>
+                        <h3>Nábytek</h3>
                         <p>Kvalitní a kreativní nábytek, který se hodí do každého domova, ručně a pečlivě.</p>
+                    
                     </div>
                 </div>
                 <div class="col-4 col-md-6 col-sm-12">
                     <div class="item">
-                        <span><img src="img/icons/icons/card_giftcard.svg" alt="web"></span>
-                        <h4>Dárek</h4>
+                        <span class="m-auto hide-print"><img width="1" class="m-auto" src="img/icons/icons/card_giftcard.svg" alt="ikona_darku"></span>
+                        <h3>Dárek</h3>
                         <p>Chcete na přání vyřezat dárek pro vaše blízké? Určitě se lze dohodnout a zkonzultovat, jak byste si dárek představovali.</p>
+                       
                     </div>
                 </div>
                 
             </div>
         </div>
     </section>
-    <!-- ChoseUs Section End -->
+    <!-- choose-me Section End -->
+
+    <!-- product Section Begin -->
+    <section class="product-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title float-left ">
+                        <span>Výrobky na prodej</span>
+                        <h2>Buď novým majitelem těchto děl</h2>           
+                    </div>
+                    <a href="products.html" class="primary-btn float-right m-1">Zobrazit vše</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3 col-md-6 col-sm-12">
+                    <div class="item">
+                        <img width="200" src="img/gallery/v-5.jpg" alt="Sova">
+                        <div class="overlay">
+                            <div class="overlay-content align-center">
+                                <h3>Sova</h3>
+                                <p>Smrkové dřevo, 100cm</p>
+                                <a href="contact.html" class="secondary-btn">Mám zájem</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 col-md-6 col-sm-12">
+                    <div class="item">
+                        <img width="200" src="img/gallery/v-6.jpg" alt="Hříbek">
+                        <div class="overlay">
+                            <div class="overlay-content align-center">
+                                <h3>Hříbek</h3>
+                                <p>Smrkové dřevo, 60cm</p>
+                                <a href="contact.html" class="secondary-btn">Mám zájem</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 col-md-6 col-sm-12">
+                    <div class="item">
+                        <img width="200" src="img/gallery/v-7.jpg" alt="Zvonice_větší">
+                        <div class="overlay">
+                            <div class="overlay-content align-center">
+                                <h3>Zvonice č.1</h3>
+                                <p>Smrkové dřevo, 150cm</p>
+                                <a href="contact.html" class="secondary-btn">Mám zájem</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 col-md-6 col-sm-12">
+                    <div class="item">
+                        <img width="200" src="img/gallery/v-8.jpg" alt="Zvonice_menší">
+                        <div class="overlay">
+                            <div class="overlay-content align-center">
+                                <h3>Zvonice č.2</h3>
+                                <p>Smrkové dřevo, 140cm</p>
+                                <a href="contact.html" class="secondary-btn">Mám zájem</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                
+            </div>
+        </div>
+    </section>
+    <!-- product Section End -->
+
+    <!-- Gallery Section Begin -->
+    <section class="gallery-section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title align-center">
+                        <span>Galerie</span>
+                        <h2>Jaké výtvory jsem již vytvořil?</h2>           
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3 col-md-6 col-sm-12">
+                    <div class="item">
+                        <img width="200" src="img/gallery/v-1.jpg" alt="Krýgl">
+                       
+                    </div>
+                </div>
+                <div class="col-3 col-md-6 col-sm-12">
+                    <div class="item">
+                        <img width="200" src="img/gallery/v-2.jpg" alt="Medvěd">
+                    </div>
+                </div>
+                <div class="col-6 col-md-6 col-sm-12">
+                    <div class="item">
+                        <img width="200" src="img/gallery/s-1.jpg" alt="Řezba_v_akci">
+                        
+                    </div>
+                </div>
+                <div class="col-6 col-md-6 col-sm-12">
+                    <div class="item">
+                        <img width="200" src="img/gallery/s-2.jpg" alt="Hotový_lesní_výtvor">
+                        
+                    </div>
+                </div>
+                <div class="col-3 col-md-6 col-sm-12">
+                    <div class="item">
+                        <img width="200" src="img/gallery/v-3.jpg" alt="Sova">
+                        
+                    </div>
+                </div>
+                <div class="col-3 col-md-6 col-sm-12">
+                    <div class="item">
+                        <img width="200" src="img/gallery/v-4.jpg" alt="Mimoň">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 justify-center d-flex">
+                    <a href="gallery.html" class="primary-btn">Zobrazit vše</a>
+                </div>
+            </div>
+           
+        </div>
+    </section>
+    <!-- Gallery Section End -->
+
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-4 col-sm-12">
+                    <div class="address align-center">
+                        <span><img width="60" src="img/icons/icons/home.svg" alt="adresa-icon"></span>
+                        <div class="footer-info-contact"><a href="https://goo.gl/maps/nUgxQu16Puy21FGF7">Staré Město 788 32, Květná 233</a></div>
+                        
+                    </div>
+                </div>
+                <div class="col-4 col-sm-12">
+                    <div class="phone align-center">
+                        <span><img width="60" src="img/icons/icons/phone_android.svg" alt="telefon-icon"></span>
+                        <div class="footer-info-contact"><a href="tel:732953891">+420 732 953 891</a></div>
+                        
+                    </div>
+                </div>
+                <div class="col-4 col-sm-12">
+                    <div class="mail align-center">
+                        <span><img width="60" src="img/icons/icons/mail.svg" alt="mail-icon"></span>
+                        <div class="footer-info-contact"><a href="mailto:marcovindy@gmail.com">marcovindy@gmail.com</a></div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 copyright-text align-center">
+                    <p>Copyright ©2021 with ❤ by <a href="https://eso.vse.cz/~vanm32/cv/index.html">Marek Vaníček</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <div class="scroll-up">
+        <a href="#">
+            <svg width="72" height="72">
+                <circle cx="36" cy="36" r="36"/>
+                <path d="M53,42.4L37.4,26.8c-0.8-0.8-2-0.8-2.8,0L19,42.4c-0.8,0.8-0.8,2,0,2.8l0,0c0.8,0.8,2,0.8,2.8,0L36,31.1l14.1,14.1
+                    c0.8,0.8,2,0.8,2.8,0l0,0C53.8,44.4,53.8,43.1,53,42.4z"/>
+            </svg>
+        </a>
+    </div>
+
+    <script src="js/script-menu.js"></script>
 
 </body>
 

@@ -3,7 +3,7 @@ header {
   position: absolute;
   left: 0;
   top: 0;
-  height: 67px;
+  height: 90px;
   width: 100%;
   font-family: "Oswald", sans-serif;
   font-weight: 500;
@@ -12,6 +12,7 @@ header {
 }
 
 header #toggleMenu {
+  height: 100%;
   display: block;
   position: relative;
 }
@@ -94,66 +95,102 @@ header #toggleMenu .container .row .col-9 .nav-menu ul li {
 header #toggleMenu .container .row .col-9 .nav-menu ul li > a {
   padding: 1em;
   color: #fff;
+  -webkit-transition: ease 0.5s;
+  transition: ease 0.5s;
+}
+
+header #toggleMenu .container .row .col-9 .nav-menu ul li > a:hover {
+  background-color: #f36100;
+  -webkit-transition: ease 0.5s;
+  transition: ease 0.5s;
+}
+
+header #toggleMenu .container .row .col-9 .nav-menu ul li.active > a {
+  background-color: #f36100;
 }
 
 @media (max-width: 960px) {
   /* ========================= */
   /* ===== Tablet Burger ===== */
   /* ========================= */
+  header {
+    height: auto;
+  }
+  header.black {
+    background-color: #0a0a0a;
+  }
   header #toggleMenu .container {
     display: block;
     position: relative;
+  }
+  header #toggleMenu .container .burger-menu {
+    cursor: pointer;
+    position: absolute;
+    top: 30px;
+    right: 25px;
+    width: 40px;
+    height: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header #toggleMenu .container .burger-menu.opened span:nth-of-type(1) {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  header #toggleMenu .container .burger-menu.opened span:nth-of-type(2) {
+    display: none;
+  }
+  header #toggleMenu .container .burger-menu.opened span:nth-of-type(3) {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    transform: rotate(-45deg);
   }
   header #toggleMenu .container span {
     display: block;
     width: 33px;
     height: 4px;
     margin-bottom: 5px;
-    position: absolute;
     background: #fff;
     border-radius: 3px;
     z-index: 1;
-    -webkit-transform-origin: 4px 0px;
-            transform-origin: 4px 0px;
-    -webkit-transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 1 ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-    transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 1 ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 1 ease;
-    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 1 ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-  }
-  header #toggleMenu .container span:nth-of-type(1) {
-    -webkit-transform-origin: 0% 0%;
-            transform-origin: 0% 0%;
-    right: 30px;
-    top: 18px;
-  }
-  header #toggleMenu .container span:nth-of-type(2) {
-    -webkit-transform-origin: 50% 50%;
-            transform-origin: 50% 50%;
-    right: 30px;
-    top: 29px;
-  }
-  header #toggleMenu .container span:nth-of-type(3) {
-    -webkit-transform-origin: 0% 100%;
-            transform-origin: 0% 100%;
-    right: 30px;
-    top: 40px;
-  }
-  header #toggleMenu .container input {
-    display: block;
-    width: 40px;
-    height: 32px;
-    position: absolute;
-    right: 30px;
-    top: 30px;
-    cursor: pointer;
-    opacity: 0;
-    /* hide this */
-    z-index: 2;
-    /* and place it over the hamburger */
-    -webkit-touch-callout: none;
   }
   header #toggleMenu .container .row .col-9 .nav-menu {
     display: none;
+  }
+  header #toggleMenu .container .row .col-9 .nav-menu.hide {
+    display: none;
+  }
+  header #toggleMenu .container .row .col-9 .nav-menu.show {
+    display: block;
+  }
+  header #toggleMenu .container .row .col-9 .nav-menu ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header #toggleMenu .container .row .col-9 .nav-menu ul li {
+    padding: 1rem;
+  }
+  header #toggleMenu .container .row .col-9 .nav-menu ul li > a {
+    padding: 1rem 5rem;
   }
 }
 /*# sourceMappingURL=header.css.map */
